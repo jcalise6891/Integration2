@@ -1,0 +1,65 @@
+@import url("_reset.css");
+@import url("style_desktop.css") screen and (min-width:868px);
+
+@font-face{
+    font-family: "Avenir";
+    src:url("../fonts/AvenirLTStd-Medium.woff") format("woff");
+}
+
+.bg{
+    background-color: #bf964b;
+    height:100vh;
+    width:100vw;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.s1Logo{
+    align-self: center;
+}
+
+.menu_hb{
+    align-self: center;
+}
+
+.menu_hb a{
+    text-decoration: none;
+    color:white;
+    font-family: "Avenir";
+    font-size: 2rem;
+   
+}
+
+.menu_hb li :hover{
+    text-shadow: 0 0 20px #fff;
+}
+
+
+@media(max-width:868px){
+.menu
+{
+    background-color:#736c4d;
+    position:fixed;
+    width: 100vw;
+    height:100px;
+    transition:height 1s ease-out;
+    -webkit-transition:height 1s ease-out;
+    -moz-transition:height 1s ease-out;
+    -ms-transition:height 1s ease-out;
+    -o-transition:height 1s ease-out;
+}
+
+.menu_hb ul{
+    display:none;   
+}
+
+#hbMenu{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+}

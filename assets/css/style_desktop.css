@@ -1,0 +1,32 @@
+@media (min-width:868px){
+
+.menu
+{
+    background-color:#736c4d;
+    position:fixed;
+
+    height: 185px;
+    width: 100vw;
+    
+    transition: height 1s ease-out ;
+    -webkit-transition: height 1s ease-out ;
+    -moz-transition: height 1s ease-out ;
+    -ms-transition: height 1s ease-out ;
+    -o-transition: height 1s ease-out ;
+}
+
+.menu_hb ul{
+    display:flex;
+    margin-right:30px;
+}
+
+.menu_hb ul li{
+    margin-left: 30px;
+}
+
+.menu_hb #hbMenu{
+    display:none;
+}
+
+
+}
