@@ -1,4 +1,4 @@
-@media (min-width:868px){
+@media (min-width:939px){
 
 .menu
 {
@@ -15,9 +15,14 @@
     -o-transition: height 1s ease-out ;
 }
 
+.menu_hb
+{
+    margin-right:80px;
+}
+
 .menu_hb ul{
     display:flex;
-    margin-right:30px;
+    
 }
 
 .menu_hb ul li{
@@ -28,10 +33,19 @@
     display:none;
 }
 
-.slide1_content{
+.imgSlide1{
     display:flex;
     justify-content: space-between;
-    align-items: flex-end;
+}
+
+.slide1_text{
+    margin-top: 600px;
+    margin-left: 80px;
+}
+
+.slide1_button button{
+    margin-top: 712px;
+    margin-right: 80px;   
 }
 
 

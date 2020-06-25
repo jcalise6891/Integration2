@@ -1,10 +1,13 @@
 @import url("_reset.css");
-@import url("style_desktop.css") screen and (min-width:868px);
+@import url("style_desktop.css") screen and (min-width:939px);
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
 @font-face{
     font-family: "Avenir";
     src:url("../fonts/AvenirLTStd-Medium.woff") format("woff");
 }
+
+
 
 *,*::before,*::after{
     box-sizing: border-box;
@@ -24,6 +27,7 @@
 
 .s1Logo{
     align-self: center;
+    margin-left: 20px;
 }
 
 .menu_hb{
@@ -56,11 +60,26 @@
 }
 
 
-.slide1_content p{
-    margin-top: 50%;
-    margin-left: 30px;
+.slide1_text p{
+    font-family: "Antic Didone", serif;
     color:white;
-    font-size: 8rem;
+    font-size: 4rem;
+}
+
+.slide1_text .major{
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.slide1_button button{
+    background-color: #bf964b;
+    border: 0;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .slide2_content{
@@ -69,18 +88,19 @@
 
     height:100vh; 
     background-image: url("../img/Slide-2/Slide2_BGimage.png");  
-    background-position: -70%;
+    background-position: -400px;
     background-repeat: no-repeat;
 
 } 
 
 
 
-@media(max-width:868px){
+@media(max-width:938px){
 .menu
 {
     background-color:#736c4d;
     position:fixed;
+    z-index: 99;
     width: 100vw;
     height:100px;
     transition:height 1s ease-out;
@@ -99,10 +119,19 @@
     margin-left: 30px;
 }
 
-.slide1_content{
+.imgSlide1{
     display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+}
+
+.slide1_text p{
+    margin-top: 300px;
+    align-self: center;
+    text-align: center;
+}
+
+.slide1_button{
+    margin: 100px auto;
 }
 
 }
