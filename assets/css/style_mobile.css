@@ -6,10 +6,14 @@
     src:url("../fonts/AvenirLTStd-Medium.woff") format("woff");
 }
 
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
 .bg{
     background-color: #bf964b;
-    height:100vh;
-    width:100vw;
+
 }
 
 .menu{
@@ -36,11 +40,40 @@
 
 .menu_hb li :hover{
     text-shadow: 0 0 20px #fff;
+    transition: text-shadow 400ms ease-in-out;
+    -webkit-transition: text-shadow 400ms ease-in-out;
+    -moz-transition: text-shadow 400ms ease-in-out;
+    -ms-transition: text-shadow 400ms ease-in-out;
+    -o-transition: text-shadow 400ms ease-in-out;
 }
 
-.shadowEffect{
-    
+
+.imgSlide1{
+    background-image: url(../img/Slide-1/BGimage.jpg);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+.slide1_content p{
+    margin-top: 50%;
+    margin-left: 30px;
+    color:white;
+    font-size: 8rem;
+}
+
+.slide2_content{
+
+    display:flex;
+
+    height:100vh; 
+    background-image: url("../img/Slide-2/Slide2_BGimage.png");  
+    background-position: -70%;
+    background-repeat: no-repeat;
+
+} 
+
 
 
 @media(max-width:868px){
@@ -64,6 +97,12 @@
 #hbMenu{
     margin-right: 30px;
     margin-left: 30px;
+}
+
+.slide1_content{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 }
