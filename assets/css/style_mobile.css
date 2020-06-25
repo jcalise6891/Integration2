@@ -114,6 +114,25 @@
     font-size: 2rem;
 }
 
+.slide-4{
+    display:flex;
+    flex-flow: column wrap;    
+}
+
+.slide-4 .titre{
+    align-self: center;
+}
+
+.slide-4 .galleries{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+
+.slide-4 .galleries p{
+    text-align: center;
+}
+
 @media(max-width:971px){
 
 .menu{
