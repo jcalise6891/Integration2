@@ -1,5 +1,5 @@
 @import url("_reset.css");
-@import url("style_desktop.css") screen and (min-width:939px);
+@import url("style_desktop.css") screen and (min-width:971px);
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
@@ -19,6 +19,7 @@
     display:flex;
     justify-content: space-between;
     align-content: center;
+    z-index:99;
 }
 
 .s1Logo{
@@ -76,24 +77,30 @@
     cursor: pointer;
 }
 
-.slide2_content{
-    display:flex;
-    flex-flow: column wrap;
-    text-align: left;
-    height:100vh;
-    background-image: url("../img/Slide-2/Slide2_BGimage.png");
-    background-position: -400px;
-    background-repeat: no-repeat;
+.slide2_content img{
+
+    position:absolute;
+    margin-top:100px;
+    left: -400px;
     transition:opacity 1s ease-in-out;
     -webkit-transition:opacity 1s ease-in-out;
     -moz-transition:opacity 1s ease-in-out;
     -ms-transition:opacity 1s ease-in-out;
     -o-transition:opacity 1s ease-in-out;
+}
+
+.slide2_content{
+    display:flex;
+    flex-flow: column wrap;
+    text-align: left;
+    height:100vh;
+
 } 
 
 .slide2_content .article{
     margin-top: 400px;
-    color:white;    
+    color:white;
+    z-index:3;    
 }
 
 .slide2_content .article .titre{
@@ -107,7 +114,7 @@
     font-size: 2rem;
 }
 
-@media(max-width:938px){
+@media(max-width:971px){
 
 .menu{
     background-color:#736c4d;
@@ -146,9 +153,10 @@
     margin: 100px auto;
 }
 
-.slide2_content{
-    filter:alpha(opacity=50);
-    opacity:0.5;
+.slide2_content img{
+    filter:alpha(opacity=25);
+    opacity:0.25;
+    -webkit-filter:alpha(opacity=2);
 }
 
 .slide2_content .article{

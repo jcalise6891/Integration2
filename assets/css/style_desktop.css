@@ -1,4 +1,4 @@
-@media (min-width:939px){
+@media (min-width:972px){
 
 .menu
 {
@@ -50,6 +50,7 @@
 
 .slide2_content .article{
     margin-left: 550px;
+    margin-right: 50px;
 }
 
 
