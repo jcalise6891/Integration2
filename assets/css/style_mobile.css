@@ -1,18 +1,14 @@
 @import url("_reset.css");
 @import url("style_desktop.css") screen and (min-width:939px);
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
-@font-face{
-    font-family: "Avenir";
-    src:url("../fonts/AvenirLTStd-Medium.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 
 
 *,*::before,*::after{
     box-sizing: border-box;
 }
-
 
 .bg{
     background-color: #bf964b;
@@ -37,7 +33,7 @@
 .menu_hb a{
     text-decoration: none;
     color:white;
-    font-family: "Avenir";
+    font-family: "Montserrat",sans-serif;
     font-size: 2rem;
    
 }
@@ -51,14 +47,12 @@
     -o-transition: text-shadow 400ms ease-in-out;
 }
 
-
 .imgSlide1{
     background-image: url(../img/Slide-1/BGimage.jpg);
     height:100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .slide1_text p{
     font-family: "Antic Didone", serif;
@@ -83,21 +77,39 @@
 }
 
 .slide2_content{
-
     display:flex;
-
-    height:100vh; 
-    background-image: url("../img/Slide-2/Slide2_BGimage.png");  
+    flex-flow: column wrap;
+    text-align: left;
+    height:100vh;
+    background-image: url("../img/Slide-2/Slide2_BGimage.png");
     background-position: -400px;
     background-repeat: no-repeat;
-
+    transition:opacity 1s ease-in-out;
+    -webkit-transition:opacity 1s ease-in-out;
+    -moz-transition:opacity 1s ease-in-out;
+    -ms-transition:opacity 1s ease-in-out;
+    -o-transition:opacity 1s ease-in-out;
 } 
 
+.slide2_content .article{
+    margin-top: 400px;
+    color:white;    
+}
 
+.slide2_content .article .titre{
+    font-family: "Antic Didone", serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.slide2_content .article .texte{
+    font-family: "Montserrat",sans-serif;
+    font-size: 2rem;
+}
 
 @media(max-width:938px){
-.menu
-{
+
+.menu{
     background-color:#736c4d;
     position:fixed;
     z-index: 99;
@@ -134,4 +146,14 @@
     margin: 100px auto;
 }
 
+.slide2_content{
+    filter:alpha(opacity=50);
+    opacity:0.5;
 }
+
+.slide2_content .article{
+    align-self: center;
+}
+
+}
+
