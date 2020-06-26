@@ -78,15 +78,19 @@
 }
 
 .slide2_content img{
-
     position:absolute;
-    margin-top:100px;
-    left: -400px;
+    top:50%;
+    left:0;
+    transform:translate(-45%,-50%);
     transition:opacity 1s ease-in-out;
     -webkit-transition:opacity 1s ease-in-out;
     -moz-transition:opacity 1s ease-in-out;
     -ms-transition:opacity 1s ease-in-out;
     -o-transition:opacity 1s ease-in-out;
+    -webkit-transform:translate(-45%,-50%);
+    -moz-transform:translate(-45%,-50%);
+    -ms-transform:translate(-45%,-50%);
+    -o-transform:translate(-45%,-50%);
 }
 
 .slide2_content{
@@ -94,6 +98,7 @@
     flex-flow: column wrap;
     text-align: left;
     height:100vh;
+    position:relative;
 
 } 
 
@@ -114,6 +119,50 @@
     font-size: 2rem;
 }
 
+.slide-3{
+    position:relative;
+    background-color:#736c4d;
+    height: 100vh;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-3 .content{
+    position: absolute;
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+}
+
+.slide-3 .pic{
+    margin-right: 50px;
+}
+
+.slide-3 .article{
+    color:white;
+    display:flex; 
+    flex-flow:column wrap; 
+}
+
+.slide-3 .titre{
+    font-family: "Antic Didone",serif;
+    font-size: 4rem;
+    margin-bottom: ;
+}
+
+.slide-3 .text{
+    margin-top: 50px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2rem;
+}
+
+.slide-3 .contact{
+    margin-top: 50px;
+    align-self: flex-start;
+}
+
 .slide-4{
     display:flex;
     flex-flow: column wrap;    
@@ -131,6 +180,23 @@
 
 .slide-4 .galleries p{
     text-align: center;
+}
+
+@media(max-width:1332px){
+
+.slide-3 .content{
+    flex-flow:column wrap;
+}
+
+.slide-3 .contact{
+    align-self: center;
+}
+
+.slide-3 .pic{
+    margin-bottom: 50px;
+    width:50%
+}
+
 }
 
 @media(max-width:971px){
@@ -182,5 +248,9 @@
     align-self: center;
 }
 
+}
+
+.slide-3 .pic{
+    margin-top: 50px;
 }
 
