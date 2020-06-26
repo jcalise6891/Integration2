@@ -214,13 +214,14 @@
     display:flex;
     flex-flow:row wrap;
     align-items: center;
+    overflow: hidden;
 }
 
 .slide-4-5 img{
     position:absolute;
     top:50%;
     right:0;
-
+   
     transform:translate(50%,-50%);
     -webkit-transform:translate(50%,-50%);
     -moz-transform:translate(50%,-50%);
@@ -239,7 +240,8 @@
     display:flex;
     flex-flow: column wrap;    
     color:white;
-    z-index: 99;
+    z-index: 2;
+ 
     
     
 }
@@ -275,6 +277,35 @@
     -o-border-radius: 20px;
 }
 
+.slide-5{
+    background-image: url("../img/Slide-5/BackGround.jpg");
+    height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.slide-6{
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.slide-6 h2{
+
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 4rem;
+}
+
+.slide-7{
+    height:100vh;
+    background-color:#736c4d;
+}
 
 @media(max-width:1332px){
 
@@ -331,6 +362,14 @@
     margin-top: 300px;
     align-self: center;
     text-align: center;
+    font-size: clamp(2rem, 10vw, 4rem);
+}
+
+.slide1_text .major{
+    margin-top: 300px;
+    align-self: center;
+    text-align: center;
+    font-size: clamp(4rem, 10vw, 6rem);
 }
 
 .slide1_button{
@@ -341,6 +380,10 @@
     filter:alpha(opacity=25);
     opacity:0.25;
     -webkit-filter:alpha(opacity=2);
+}
+
+.slide2_content{
+    overflow-x: hidden;
 }
 
 .slide2_content .article{
@@ -377,10 +420,11 @@
 
 .slide-4-5{
     justify-content: center;
+    overflow: hidden;
 }
 
 
-.slide-4-5 .article{
+.slide-4-5 .article h1, .slide-4-5 .article h3 {
     text-align: center;
 }
 
@@ -389,9 +433,11 @@
     font-size: clamp(4rem, 10vw, 5rem);
 }
 
-
-.slide-4-5 .reduc{
-    align-self: center;
+.article-4-5 .article .reduc{
+    padding-left:20px;
 }
+
+
+
 
 }
