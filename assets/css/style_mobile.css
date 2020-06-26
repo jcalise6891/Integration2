@@ -2,13 +2,14 @@
 @import url("style_desktop.css") screen and (min-width:971px);
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
 
 
 
 *,*::before,*::after{
     box-sizing: border-box;
 }
+
 
 .bg{
     background-color: #bf964b;
@@ -75,6 +76,8 @@
     text-decoration: none;
     font-size: 2rem;
     cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
 }
 
 .slide2_content img{
@@ -149,7 +152,6 @@
 .slide-3 .titre{
     font-family: "Antic Didone",serif;
     font-size: 4rem;
-    margin-bottom: ;
 }
 
 .slide-3 .text{
@@ -161,15 +163,31 @@
 .slide-3 .contact{
     margin-top: 50px;
     align-self: flex-start;
+    background-color: #bf964b;
+    border: 0;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
 }
 
 .slide-4{
     display:flex;
-    flex-flow: column wrap;    
+    flex-flow: column wrap;
+    color:white;    
 }
 
 .slide-4 .titre{
     align-self: center;
+    font-family: "Antic Didone", serif;
+    font-size:4rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
 }
 
 .slide-4 .galleries{
@@ -178,9 +196,85 @@
     justify-content: space-around;
 }
 
+.slide-4 .galleries img{
+    box-shadow: 10px 5px 5px black;
+}
+
 .slide-4 .galleries p{
     text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;  
+    margin-bottom: 120px;  
 }
+
+.slide-4-5{
+    position:relative;
+    height: 100vh;
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+}
+
+.slide-4-5 img{
+    position:absolute;
+    top:50%;
+    right:0;
+
+    transform:translate(50%,-50%);
+    -webkit-transform:translate(50%,-50%);
+    -moz-transform:translate(50%,-50%);
+    -ms-transform:translate(50%,-50%);
+    -o-transform:translate(50%,-50%);
+
+    transition:opacity 1s ease-in-out;
+    -webkit-transition:opacity 1s ease-in-out;
+    -moz-transition:opacity 1s ease-in-out;
+    -ms-transition:opacity 1s ease-in-out;
+    -o-transition:opacity 1s ease-in-out;
+}
+
+.slide-4-5 .article{
+    position:absolute;
+    display:flex;
+    flex-flow: column wrap;    
+    color:white;
+    z-index: 99;
+    
+    
+}
+
+.slide-4-5 .article h1
+{
+    font-family:"Antic Didone",serif;
+    font-size: 5rem;
+
+}
+
+.slide-4-5 .article h3{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.43em;
+    margin-bottom: 100px;
+}
+
+.slide-4-5 .reduc{
+    background-color: white;
+    border:0;
+    border-radius: 20px;
+    color:#736c4d;
+    
+    text-align: center;
+    text-decoration: none;
+    font-size: 8rem;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 
 @media(max-width:1332px){
 
@@ -195,6 +289,11 @@
 .slide-3 .pic{
     margin-bottom: 50px;
     width:50%
+}
+
+.slide-4 .galleries{
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 }
@@ -248,9 +347,51 @@
     align-self: center;
 }
 
+.slide2_content .article .texte{
+    font-size: clamp(1rem, 10vw, 2rem);
+}
+
+.slide-3 .titre{
+    font-size: clamp(1rem, 10vw, 4rem);
+}
+
+.slide-3 .text{
+    font-size: clamp(1rem, 10vw, 2rem);
 }
 
 .slide-3 .pic{
     margin-top: 50px;
 }
 
+.slide-4 .titre{
+    font-size: clamp(2rem, 10vw, 4rem);
+}
+
+
+
+.slide-4-5 img{
+    filter:alpha(opacity=25);
+    opacity:0.25;
+    -webkit-filter:alpha(opacity=2);
+}
+
+.slide-4-5{
+    justify-content: center;
+}
+
+
+.slide-4-5 .article{
+    text-align: center;
+}
+
+
+.slide-4-5 .article h1{
+    font-size: clamp(4rem, 10vw, 5rem);
+}
+
+
+.slide-4-5 .reduc{
+    align-self: center;
+}
+
+}
