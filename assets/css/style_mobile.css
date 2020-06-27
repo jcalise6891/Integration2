@@ -11,6 +11,8 @@
 }
 
 
+
+
 .bg{
     background-color: #bf964b;
 
@@ -330,6 +332,7 @@
     font-size: 4rem;
     margin-bottom:80px;
     font-weight: 600;
+    text-align: center;
 }
 
 .slide-7 .overlay h4{
@@ -491,8 +494,8 @@
 }
 
 #hbMenu{
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .imgSlide1{
@@ -576,6 +579,11 @@
 
 .article-4-5 .article .reduc{
     padding-left:20px;
+}
+
+.slide-7
+{
+    width:100vw;
 }
 
 
