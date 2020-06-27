@@ -304,7 +304,7 @@
 }
 
 .slide-7{
-    height:80vh;
+    height:90vh;
     background-color:#736c4d;
     position: relative;
     display:flex;
@@ -347,6 +347,43 @@
 .slide-7 .overlay p{
     font-size: 1.5rem;
     text-align: center;
+}
+
+.slide-8{
+    display:flex;
+    position:relative;
+    align-items:center;
+    justify-content: space-around ;
+
+    height:100vh;
+
+    color:white;
+    font-family: "Montserrat",sans-serif;    
+}
+
+.slide-8 .content{
+
+    position:absolute;
+    display:flex;
+    flex-flow: row wrap;
+    
+    
+
+}
+
+/*.slide-8 .content .left-content{
+    margin-right:160px;
+} */
+
+.slide-8 .content .left-content h3{
+    font-size:2rem;
+    font-weight: 600;
+    margin-bottom:40px;
+}
+
+.slide-8 .content .right-content {
+    display:flex;
+    flex-flow:row wrap;
 }
 
 @media(max-width:1332px){
