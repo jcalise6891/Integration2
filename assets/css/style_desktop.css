@@ -53,11 +53,50 @@
     margin-right: 50px;
 }
 
+.slide-3{
+    height: 100vh;
+}
+
+.slide-3 .content{
+    position:absolute;
+}
+
 .slide-4-5 .article{
 
      left:15%;
     
 }
 
+.slide-6{
+    height:100vh;
+}
+
+.slide-6 h2{
+    position: absolute;
+}
+
+.slide-7{
+    height:90vh;
+}
+
+.slide-7 .overlay{
+    height:780px;
+    width:33%;
+}
+
+
+
+}
+
+@media(min-width:1332px){
+
+.slide-8{
+    height:100vh;
+}
+
+.slide-8 .rs-icone{
+    position:absolute;
+    top:70%
+}
 
 }
